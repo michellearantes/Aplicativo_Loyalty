@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity, TextInput, ScrollView } from "react-native";
+import Cabo from './assets/Cabo.png';
+ 
 
 export function ModalExtrato({ handleClose }) {
   return (
@@ -64,6 +66,9 @@ export function ModalCatalogo({ handleClose }) {
           <Text style={styles.ButtonText}>X</Text>
         </TouchableOpacity>
         <View style={styles.content}>
+          <Image
+          source={Cabo}
+          style={styles.image} />
           <Text style={styles.Titulo}>Cabo USB</Text>
           <Text style={styles.Lista}>Valor: 70 pontos</Text>
           <Text style={styles.Titulo}>Caderno universitário</Text>
@@ -187,6 +192,7 @@ const styles = StyleSheet.create({
     height: 40,
     width: "100%",
     borderColor: "gray",
+    color: 'white',
     borderWidth: 1,
     marginBottom: 30,
     paddingHorizontal: 10,
@@ -196,6 +202,7 @@ const styles = StyleSheet.create({
     height: 300,
     width: "100%",
     borderColor: "gray",
+    color: 'white',
     borderWidth: 1,
     marginBottom: 15,
     paddingHorizontal: 10,
@@ -223,4 +230,10 @@ const styles = StyleSheet.create({
     marginLeft: 340,
     marginTop: 5,
   },
+  image: {
+    marginTop: 50,
+    width: 100, // Largura da imagem
+    height: 100, // Altura da imagem
+    marginBottom: 60
+  }
 });
