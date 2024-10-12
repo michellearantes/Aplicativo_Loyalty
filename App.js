@@ -6,7 +6,8 @@ import {
   ModalPedido, 
   ModalCatalogo, 
   ModalFaleConosco, 
-  ModalDuvidas 
+  ModalDuvidas,
+  ModalRetornoMensagem
 } from './src/components/modal';
 import coins128 from './assets/coins128.png';
 
